@@ -62,8 +62,7 @@ class Grid_World():
             self._agent = new_state
 
     def reward(self):
-        state, target = self.observe()
-        if(state == target):
+        if(self._agent == self._target):
             reward = 1.0
         else:
             reward = -1.0
