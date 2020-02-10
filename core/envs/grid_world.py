@@ -85,7 +85,7 @@ class Grid_World():
             self._window = plt.figure(figsize=(3, 3))
         map_env = self.get_map()
         plt.clf()
-        plt.imshow(map_env, cmap='viridis', vmin=0, vmax=3)
+        plt.imshow(map_env, cmap='viridis', vmin=0, vmax=3, norm=None)
         plt.axis('off')
         self._window.canvas.draw()
         self._window.canvas.flush_events()
